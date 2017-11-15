@@ -17,10 +17,14 @@ var jqueryLoaded = setInterval( function() {
 		      pymChild.sendHeight();
 		      console.log("resize index ici ...");
 		 });
-
+			 
 $("div.AccordionPanelTab.borderbox.clearfix.colelem").click(function() {
   console.log("y'a un click " ) ;
-  $(window).trigger('resize');
+  
+setTimeout( function() { 
+    $(window).trigger('resize')
+   } , 1000);
+
 
 });
 
